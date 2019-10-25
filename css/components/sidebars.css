@@ -1,0 +1,84 @@
+.sidebars {
+  display: flex;
+  width: 100%;
+}
+
+.left-sidebar {
+  background-color: #261C25;
+  padding: 16px;
+}
+
+.sidebar-unselected-button {
+  text-decoration: none;
+  margin: 14px;
+}
+
+.sidebar-unselected-button a {
+  text-decoration: none;
+  color: #64534E;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.sidebar-unselected-button a:hover {
+  color: white;
+}
+
+.right-sidebar {
+  background-color: #4B3949;
+  padding: 16px;
+  flex-grow: 1;
+  color: white;
+  padding-left: 16px;
+}
+
+.user {
+  display: flex;
+  align-content: center;
+  color: #8A8EA0;
+}
+
+.channel-header {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.channel-header h2 {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.channel {
+  display: flex;
+  align-content: center;
+  color: #8A8EA0;
+  margin-top: -16px;
+  margin-bottom: -16px;
+}
+
+#top-channel {
+  margin-top: 6px;
+  color: white;
+}
+
+#top-user {
+  margin-top: 1px;
+}
+
+#top-channel i {
+  color: white;
+}
+
+#direct-message-header {
+  margin-top: 6px;
+}
+
+#direct-message-header h2 {
+  font-size: 15px;
+}
+
+#dm-header-plus {
+  font-size: 14px;
+  padding-bottom: 5px;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Slack prototype</title>
+    <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Varela">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+      <div class="row" id="interface">
+        <div class="sidebars col-3">
+          <div class="left-sidebar">
+            <div class="sidebar-button"><a href="#">LW</a></div>
+            <div class="sidebar-unselected-button"><a href="#">SL</a></div>
+          </div>
+          <div class="right-sidebar">
+            <h2>Le Wagon</h2>
+            <div class="user">
+              <div class="online-badge"><i class="fas fa-circle"></i></div>
+                <p>dtrump</p>
+            </div>
+            <div class="channels">
+              <div class="channel-header">
+                <h2>Channels</h2>
+                <div class="plus"><i class="fas fa-plus"></i></i></div>
+              </div>
+              <div class="channel" id="top-channel">
+                <div class="hash"><i class="fab fa-slack-hash"></i></div>
+                <p>general</p>
+              </div>
+              <div class="channel">
+                <div class="hash"><i class="fab fa-slack-hash"></i></div>
+                <p>music</p>
+              </div>
+              <div class="channel">
+                <div class="hash"><i class="fab fa-slack-hash"></i></div>
+                <p>anime</p>
+              </div>
+              <div class="channel">
+                <div class="hash"><i class="fab fa-slack-hash"></i></div>
+                <p>afk</p>
+              </div>
+            </div>
+            <div class="channels">
+              <div class="channel-header" id="direct-message-header">
+                <h2>Direct Messages</h2>
+                <div class="plus" id="dm-header-plus"><i class="fas fa-plus"></i></i></div>
+              </div>
+              <div class="channel" id="top-user">
+                <div class="online-badge"><i class="fas fa-circle"></i></div>
+                <p>Putin[KGB]</p>
+              </div>
+              <div class="channel">
+                <div class="online-badge"><i class="fas fa-circle"></i></div>
+                <p>merkele.992</p>
+              </div>
+              <div class="channel">
+                <div class="online-badge"><i class="fas fa-circle"></i></div>
+                <p>Shinz04b3</p>
+              </div>
+              <div class="channel">
+                <div class="online-badge"><i class="fas fa-circle"></i></div>
+                <p>(fr)Macron</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="chat col-9">
+          <div class="title border-bottom">
+           <div class="hash"><i class="fab fa-slack-hash"></i></div>
+           <h1>general</h1>
+          </div>
+          <div class="message-box">
+            <div class="message-contents">
+              <img src="https://pmcvariety.files.wordpress.com/2019/03/trump-1.jpg?w=1000" class="avatar">
+              <div class="message"><h5>dtrump</h5>
+                <p>I'm going to get dinner tonight, and Mexico's going to pay for it!</p>
+            </div>
+            </div>
+            <div class="message-contents">
+              <img src="https://static.politico.com/dims4/default/5231fa6/2147483647/resize/1160x%3E/quality/90/?url=https%3A%2F%2Fstatic.politico.com%2F91%2Fe7%2F234a20fb48afb9777364d72836c9%2Fgettyimages-1056018150.jpg" class="avatar">
+              <div class="message"><h5>Putin[KGB]</h5>
+                <p>i hear the ukrainian place down the road has good food</p>
+            </div>
+            </div>
+            <div class="message-contents">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Johnson_%2848791303991%29_%28cropped%29.jpg" class="avatar">
+              <div class="message"><h5>boris.jonson</h5>
+                <p>Can anyone spot me a bit of cash please will pay you back in a bit</p>
+            </div>
+            </div>
+            <div class="message-contents">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Emmanuel_Macron_in_Tallinn_Digital_Summit._Welcome_dinner_hosted_by_HE_Donald_Tusk._Handshake_%2836669381364%29_%28cropped_2%29.jpg" class="avatar">
+              <div class="message"><h5>(fr)Macron</h5>
+                <p>dont make others pay for your mess lol</p>
+            </div>
+            </div>
+            <div class="message-contents">
+              <img src="https://pmcvariety.files.wordpress.com/2019/03/trump-1.jpg?w=1000" class="avatar">
+              <div class="message"><h5>dtrump</h5>
+                <p>Sushi it is</p>
+            </div>
+            </div>
+            <div class="message-contents">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Kim_Jong-un_IKS_2018.jpg" class="avatar">
+              <div class="message"><h5>k1m</h5>
+                <p>can i come pls</p>
+            </div>
+            </div>
+            <div class="message-contents">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Shinz%C5%8D_Abe_Official.jpg/220px-Shinz%C5%8D_Abe_Official.jpg" class="avatar">
+              <div class="message"><h5>shinz04b3</h5>
+                <p>やばい</p>
+            </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+    <!-- Including Bootstrap JS (with its Popper.js / jQuery dependency) so that dynamic components work -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
